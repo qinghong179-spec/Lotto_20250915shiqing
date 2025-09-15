@@ -40,8 +40,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Play(modifier: Modifier = Modifier) {
-    var lucky by remenber {
-        mutableStateOf((1..100).random())
+    var lucky =(1..100).random()
     }
     Column (modifier = modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
